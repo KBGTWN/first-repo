@@ -1,0 +1,20 @@
+---
+title: "test_project_doc"
+format: 
+  html:
+    self-contained: true
+---
+
+
+```{r}
+library(tidyverse)
+storms <- storms
+```
+
+```{r}
+ggplot(storms, 
+       mapping = aes(wind, 
+                     pressure))+
+  geom_col(aes(color = category))
+```
+
