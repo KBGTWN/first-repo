@@ -5,6 +5,9 @@ format:
     self-contained: true
 ---
 
+```{r}
+#test component line
+```
 
 ```{r}
 library(tidyverse)
@@ -15,6 +18,6 @@ storms <- storms
 ggplot(storms, 
        mapping = aes(wind, 
                      pressure))+
-  geom_col(aes(color = category))
+  geom_point(aes(color = category))
 ```
 
